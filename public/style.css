@@ -1,0 +1,73 @@
+body {
+    background: #FFF8D4;
+    font-family: Arial, sans-serif;
+    color: #313647;
+}
+.container {
+    background: #fff;
+    margin: 40px auto;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(49,54,71,0.08);
+    max-width: 900px;
+    min-width: 400px;
+    border: 2px solid #A3B087;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2, h3 {
+    margin-bottom: 24px;
+    color: #313647;
+}
+form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    color: #435663;
+}
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #A3B087;
+    border-radius: 6px;
+    background: #FFF8D4;
+    color: #313647;
+}
+form input:focus {
+    background: #FFF8D4;
+    color: #313647;
+}
+button {
+    background: #435663;
+    color: #FFF8D4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 4px;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #313647;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    background: #FFF8D4;
+    color: #313647;
+    max-width: 800px;
+}
+table th, table td {
+    border: 1px solid #A3B087;
+    padding: 8px 12px;
+    text-align: left;
+}
+table th {
+    background: #A3B087;
+    color: #313647;
+}

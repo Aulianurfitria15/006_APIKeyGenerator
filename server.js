@@ -105,13 +105,20 @@ function query(sql, params = []) {
 app.delete('/api/user/:id', async (req, res) => {
   try {
     const { id } = req.params;
+    
+    // Hapus semua API key milik user dulu
+    await query('DELETE FROM apikeys WHERE user_id = ?', [id]);
+    
+    // Baru hapus user
     await query('DELETE FROM users WHERE id = ?', [id]);
+    
     res.json({ success: true, message: 'User deleted' });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Gagal menghapus user' });
   }
 });
+
 
 // ======================= DELETE API KEY =======================
 app.delete('/api/apikey/:id', async (req, res) => {
